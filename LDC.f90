@@ -247,7 +247,7 @@ program LDC
         avg_L2_v = avg_L2_v + (v_vel(r,c) - v_vel_old(r,c))*(v_vel(r,c) - v_vel_old(r,c))
       enddo
     enddo
-    avg_L2_v = sqrt(avg_L2_v/((NROWS+1)/NCOLS))
+    avg_L2_v = sqrt(avg_L2_v/((NROWS+1)*NCOLS))
 
     !UPDATING OLD VELOCITIES
     do r=1,NROWS+2
